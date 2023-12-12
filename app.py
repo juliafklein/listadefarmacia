@@ -58,7 +58,7 @@ def add_produto(form: ProdutoSchema):
         return {"mesage": error_msg}, 400
 
 
-@app.get('/produtos', tags=[produto_tag],
+@app.get('/produto', tags=[produto_tag],
          responses={"200": ListagemProdutosSchema, "404": ErrorSchema})
 def get_produtos():
     
